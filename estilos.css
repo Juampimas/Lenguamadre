@@ -1,0 +1,485 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+header {
+    height: 170px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    padding: 0 100px;
+    color: white;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo a img{
+    height: 50px;
+    width: 50px;
+    transition: all 200ms ease;
+}
+.logo a img:hover{
+    transform:scale(1.2);
+}
+.logo a{
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    margin-left: 60px; 
+    color: white; 
+    transition: all 200ms ease;
+}
+header nav ul li a:hover{
+    color: grey;
+}
+
+/* MAIN */
+
+main{
+    height: 100vh;
+    width: 100%;
+    background-image: url(imagenes/main.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.contenedor h1{
+    font-size: 55px;
+    font-weight: 700;
+}
+.contenedor p{
+    font-size: 35px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+.contenedor a{
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 10px 40px;
+    color: white;
+    display: inline-block;
+    transition:all 200ms ease ;
+}
+.contenedor a:hover{
+    transform: scale(1.1, 1.1);
+}
+
+/* SECCION1 */
+
+#hablar{
+    height: 105vh;
+    width: 100%;
+    padding:0 300px;
+    padding-top: 50px;
+}
+.hablar__texto{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hablar__texto h2{
+    font-size: 50px;
+}
+.hablar__texto p{
+    font-size: 24px;
+    margin: 25px 0;
+    font-family: 'Raleway', sans-serif;
+}
+.hablar__grid{
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-areas:
+    "item1 item2 item3 item4"
+    "item5 item6 item7 item8";
+    gap: 20px;
+}
+.item{
+    text-align:center;
+    font-size: 35px;
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 50px;
+}
+.item1{
+    grid-area: item1;
+}
+.item2{
+    grid-area: item2;
+}
+.item3{
+    grid-area: item3;
+}
+.item4{
+    grid-area: item4;
+}
+.item5{
+    grid-area: item5;
+}
+.item6{
+    grid-area: item6;
+}
+.item7{
+    grid-area: item7;
+}
+.item8{
+    grid-area: item8;
+}
+
+.hablar__txt2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100px;
+    font-size: 24px;
+}
+.hablar__txt2 p{
+    font-family: 'Raleway', sans-serif;
+}
+.item img{
+    transition: all 200ms ease;
+}
+.item img:hover{
+    transform:scale(1.2);
+}
+
+/* SECCION2 */
+
+#funciona{
+    height: 70vh;
+    width: 100%;
+    background-image: url(imagenes/comotrabajamos.png);
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    color: white;
+    padding: 100px;
+}
+
+#funciona h2{
+    text-align: center;
+    font-size: 50px;
+}
+.funciona__columnas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col{
+    width: 300px;
+    margin: 0 45px;
+}
+.col h3{
+    font-size: 140px;
+    margin-bottom: 10px;
+}
+.col p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    color: rgb(221, 221, 221);
+}
+
+/* SECCION3 */
+
+#profesionales{
+    height: 180vh;
+    width: 100%;
+    padding: 100px;
+}
+.profesionales__intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profesionales__intro h2{
+    font-size: 50px;
+}
+.profesionales__intro p{
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 30px;
+    text-align: center;
+    width: 70%;
+}
+.profesionales__flex{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pro{
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pro h3{
+    text-align: center;
+    font-size: 30px;
+}
+.pro p{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.pro img{
+    display: block;
+    object-fit: cover;
+}
+.pro a{
+    display: inline-block;
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px 90px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    transition: all 200ms ease;
+}
+.pro a:hover{
+    transform: scale(1.1);
+}
+.profesionales__outro{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+}
+.profesionales__outro h2{
+    font-size: 50px;
+}
+.profesionales__outro p{
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 40px;
+    width: 70%;
+    margin-bottom: 100px;
+}
+.trabajamos__flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 0 200px;
+}
+.trabajamos__flex p{
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+/* SECCION4 */
+
+#blog{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    background-color: black;
+    padding: 100px 300px;
+}
+#blog h2{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.blog__flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blog--img{
+    height: 200px;
+    width: 100%;
+    background-image: url(imagenes/main.png);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+.artic{
+    color: black;
+    background-color: #fff;
+    margin: 0 20px;
+    padding: 20px;
+    text-align: center;
+}
+.artic p{
+    margin: 15px;
+}
+.artic a{
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+    transition: all 200ms ease;
+}
+.artic a:hover{
+    color: grey;
+}
+.artic hr{
+    margin-top: 20px;
+}
+.fecha {
+    color: rgb(87, 86, 86);
+}
+
+.btn--blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn--blog a{
+    background-color: white;
+    padding: 10px 40px;
+    text-decoration: none;
+    margin-top: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: black;
+    transition: all 200ms ease;
+}
+.btn--blog a:hover{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+
+/* SECCION5 */
+
+#contacto{
+    height: 90vh;
+    width: 100%;
+    padding-top: 100px;
+}
+.contacto__intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contacto__intro h2{
+    font-size: 50px;
+}
+.contacto__intro p{
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    margin: 30px 0;
+    text-align: center;
+    width: 70%;
+}
+.contacto__intro input{
+    width: 100%;
+    height: 50px;
+    margin: 15px 0;
+    border: none;
+    border-bottom: 2px solid black;
+}
+.contacto__intro input::placeholder{
+    font-size: 20px;
+}
+.btn--form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn--form button{
+    font-size: 15px;
+    background-color: black;
+    padding: 10px 40px;
+    text-decoration: none;
+    margin-top: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: white;
+    border:none;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+.btn--form button:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+/* FOOTER  */
+
+#footer{
+    height: 30vh;
+    width: 100%;
+    color: white;
+    background-color: black;
+    padding: 30px 60px;
+}
+.footer__flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__flex a img{
+    height: 80px;
+    width: 80px;
+    transition: all 200ms ease;
+}
+.footer__flex a img:hover{
+    transform:scale(0.9);
+}
+.footer__flex nav li{
+    display: inline-block;
+    margin: 0 30px;
+}
+.footer__flex nav li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 200ms ease;
+}
+.footer__flex nav ul li a:hover{
+    color: grey;
+}
+.txt__final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.txt__final p{
+    margin-top: 70px;
+    font-size: 20px;
+}
